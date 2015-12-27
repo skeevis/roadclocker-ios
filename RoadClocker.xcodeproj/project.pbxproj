@@ -14,6 +14,7 @@
 		C14524121C30447D00514857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14524101C30447D00514857 /* LaunchScreen.storyboard */; };
 		C145241D1C30447D00514857 /* RoadClockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145241C1C30447D00514857 /* RoadClockerTests.swift */; };
 		C14524281C30447D00514857 /* RoadClockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14524271C30447D00514857 /* RoadClockerUITests.swift */; };
+		C14524361C30605800514857 /* TrackerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14524351C30605800514857 /* TrackerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C14524231C30447D00514857 /* RoadClockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadClockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14524271C30447D00514857 /* RoadClockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadClockerUITests.swift; sourceTree = "<group>"; };
 		C14524291C30447D00514857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C14524351C30605800514857 /* TrackerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C145240E1C30447D00514857 /* Assets.xcassets */,
 				C14524101C30447D00514857 /* LaunchScreen.storyboard */,
 				C14524131C30447D00514857 /* Info.plist */,
+				C14524351C30605800514857 /* TrackerTableViewCell.swift */,
 			);
 			path = RoadClocker;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14524361C30605800514857 /* TrackerTableViewCell.swift in Sources */,
 				C145240A1C30447D00514857 /* ViewController.swift in Sources */,
 				C14524081C30447D00514857 /* AppDelegate.swift in Sources */,
 			);

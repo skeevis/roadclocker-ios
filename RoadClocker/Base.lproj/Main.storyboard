@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="RoadClocker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bNv-UO-wql">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="timeTrackerCell" rowHeight="60" id="8wU-6i-Ocz" customClass="TrackerTableViewCell" customModule="RoadClocker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8wU-6i-Ocz" id="3LM-EY-VAO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz5-Hu-tQ9">
+                                                    <rect key="frame" x="15" y="0.0" width="540" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="vPQ-Mr-beA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hC2-Rp-KcE">
+                                                    <rect key="frame" x="22" y="44" width="150" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="yoO-WX-4Pi"/>
+                                                    </constraints>
+                                                    <color key="progressTintColor" red="0.55686274509803924" green="0.26666666666666666" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="trackTintColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                                </progressView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hC2-Rp-KcE" secondAttribute="trailing" constant="10" id="MjU-xP-K42"/>
+                                                <constraint firstItem="Bz5-Hu-tQ9" firstAttribute="top" secondItem="3LM-EY-VAO" secondAttribute="topMargin" constant="5" id="X9g-h6-NHt"/>
+                                                <constraint firstItem="hC2-Rp-KcE" firstAttribute="leading" secondItem="3LM-EY-VAO" secondAttribute="leadingMargin" constant="10" id="dJw-R5-RlA"/>
+                                                <constraint firstItem="hC2-Rp-KcE" firstAttribute="top" secondItem="Bz5-Hu-tQ9" secondAttribute="bottom" constant="5" id="eOk-p2-RlH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bz5-Hu-tQ9" secondAttribute="trailing" constant="10" id="hqX-YA-cQP"/>
+                                                <constraint firstItem="Bz5-Hu-tQ9" firstAttribute="leading" secondItem="3LM-EY-VAO" secondAttribute="leadingMargin" constant="10" id="ib5-Iq-x4q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                        <connections>
+                                            <outlet property="labelView" destination="Bz5-Hu-tQ9" id="WYv-kT-v7P"/>
+                                            <outlet property="progressBar" destination="hC2-Rp-KcE" id="Ojj-U4-ZGZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RdN-yV-gfY"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1eZ-1m-ZH2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bNv-UO-wql" secondAttribute="trailing" constant="-15" id="2lz-L1-HxV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bNv-UO-wql" secondAttribute="bottom" id="O9u-5g-nDu"/>
+                            <constraint firstItem="bNv-UO-wql" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QDH-Eu-g76"/>
+                            <constraint firstItem="bNv-UO-wql" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="zX2-GX-Rdk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bNv-UO-wql" id="i5j-7n-gOh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="445" y="378"/>
         </scene>
     </scenes>
 </document>
