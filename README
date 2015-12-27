@@ -1,0 +1,9 @@
+This is an experiment to learn iBeacon, and continue diving into iOS/Swift development. With that being said, keep in mind this is relatively n00b-ish code.
+
+Simple app to automatically time the trips you take. It does this by tracking how long you're close to a particular beacon, meant to be placed in your car. It'll automatically track the time and save trips as the beacon goes in and out of range (or is turned on and off).
+
+For the actual iBeacon, I'm using Radius Networks RadBeacon USB (http://store.radiusnetworks.com/collections/all/products/radbeacon-usb-2) plugged into a cigarette lighter adapter, not only due to never having to replace the battery, but also so the beacon only broadcasts when the car is on (AKA when I'm driving it)
+
+If you want to use this project for your own, the one thing you should remember to do is reprogram your beacon UUID, or modify the one in here.
+
+TODO: Insert some kind of license. Eventually. If you use this to build the next decacorn, I get 5%, let's just stick with that for now.

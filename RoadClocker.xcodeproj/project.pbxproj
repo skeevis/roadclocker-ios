@@ -15,6 +15,7 @@
 		C145241D1C30447D00514857 /* RoadClockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145241C1C30447D00514857 /* RoadClockerTests.swift */; };
 		C14524281C30447D00514857 /* RoadClockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14524271C30447D00514857 /* RoadClockerUITests.swift */; };
 		C14524361C30605800514857 /* TrackerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14524351C30605800514857 /* TrackerTableViewCell.swift */; };
+		C14524381C30813700514857 /* README in Resources */ = {isa = PBXBuildFile; fileRef = C14524371C30813700514857 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C14524271C30447D00514857 /* RoadClockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadClockerUITests.swift; sourceTree = "<group>"; };
 		C14524291C30447D00514857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C14524351C30605800514857 /* TrackerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerTableViewCell.swift; sourceTree = "<group>"; };
+		C14524371C30813700514857 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C14523FB1C30447D00514857 = {
 			isa = PBXGroup;
 			children = (
+				C14524371C30813700514857 /* README */,
 				C14524061C30447D00514857 /* RoadClocker */,
 				C145241B1C30447D00514857 /* RoadClockerTests */,
 				C14524261C30447D00514857 /* RoadClockerUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14524381C30813700514857 /* README in Resources */,
 				C14524121C30447D00514857 /* LaunchScreen.storyboard in Resources */,
 				C145240F1C30447D00514857 /* Assets.xcassets in Resources */,
 				C145240D1C30447D00514857 /* Main.storyboard in Resources */,
